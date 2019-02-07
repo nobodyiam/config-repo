@@ -1,0 +1,12 @@
+server:
+  port: 9088
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+turbine:
+  appConfig: reservation-client
+  clusterNameExpression: "'default'"
